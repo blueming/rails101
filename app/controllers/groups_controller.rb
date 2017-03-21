@@ -12,7 +12,7 @@ class GroupsController < ApplicationController
     end
 
    def edit
-       end
+       
 
      @group = Group.find(params[:id])
 
@@ -62,5 +62,4 @@ class GroupsController < ApplicationController
  def group_params
    params.require(:group).permit(:title, :description)
  end
-
 end
